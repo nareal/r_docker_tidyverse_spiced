@@ -16,3 +16,9 @@ script:
   - docker rm -f $(docker ps -a -q)
 
  
+notifications:
+  email:
+    recipients:
+      - nareal@gmail.com
+    on_success: always
+    on_failure: always
