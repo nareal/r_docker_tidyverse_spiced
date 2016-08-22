@@ -6,7 +6,7 @@ services:
 ## Make sure all containers build without error.
 
 before_install: 
-  - docker build -t nareal/r_docker_r_docker_tidyverse_spiced .
+  - docker build -t nareal/r_docker_tidyverse_spiced .
 
 ## Crude test, see if our container stays up after launch
 script:
