@@ -1,0 +1,18 @@
+sudo: required
+
+services:
+  - docker
+
+## Make sure all containers build without error.
+
+before_install: 
+  - docker build -t nareal/r_docker_r_docker_tidyverse_spiced .
+
+## Crude test, see if our container stays up after launch
+script:
+  - docker run -ti nareal/r_docker_tidyverse_spiced R --version
+  - docker run -d --name rstudio nareal/r_docker_tidyverse_spiced
+  - sleep 5 && docker ps | grep r_docker_tidyverse_spiced
+  - docker rm -f $(docker ps -a -q)
+
+ 
