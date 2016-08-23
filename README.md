@@ -4,13 +4,13 @@
 
 This docker file extends the [rocker/hadleyverse](https://hub.docker.com/r/rocker/hadleyverse/) docker image, that includes RStudio + rmarkdown/pandoc/latex + R package ecosystem from Hadley Wickham, for more information check the [rocker-org/hadleyverse github repository](https://github.com/rocker-org/hadleyverse).
 
-The current image uses the stable R, and RStudio versions and adds the following packages:
+The current image uses the stable R, and RStudio versions and adds the following packages from [CRAN](https://cran.r-project.org/):
 
-- [CRAN - Package fBasics](https://cran.r-project.org/web/packages/fBasics/index.html)
-- [CRAN - Package fArma](https://cran.r-project.org/web/packages/fArma/index.html)
-- [CRAN - Package fGarch](https://cran.r-project.org/web/packages/fGarch/index.html)
-- [CRAN - Package forecast](https://cran.r-project.org/web/packages/forecast/index.html)
-- [CRAN - Package timeSeries](https://cran.r-project.org/web/packages/timeSeries/index.html)
+- [fBasics](https://cran.r-project.org/web/packages/fBasics/index.html)
+- [fArma](https://cran.r-project.org/web/packages/fArma/index.html)
+- [fGarch](https://cran.r-project.org/web/packages/fGarch/index.html)
+- [forecast](https://cran.r-project.org/web/packages/forecast/index.html)
+- [timeSeries](https://cran.r-project.org/web/packages/timeSeries/index.html)
 - [flexdashboard: Easy interactive dashboards for R](http://rmarkdown.rstudio.com/flexdashboard/)
 - [Leaflet](http://rstudio.github.io/leaflet/)
 - [dygraphs](http://rstudio.github.io/dygraphs/)
@@ -18,18 +18,29 @@ The current image uses the stable R, and RStudio versions and adds the following
 - [rbokeh](http://hafen.github.io/rbokeh/)
 - [Highcharter](http://jkunst.com/highcharter/)
 - [networkD3](http://christophergandrud.github.io/networkD3/)
-- [d3heatmap](https://github.com/rstudio/d3heatmap)
 - [DT](http://rstudio.github.io/DT/)
+- [ggvis](http://ggvis.rstudio.com/)
+- [xts](https://cran.r-project.org/web/packages/xts/index.html)
+
+and the following from github repositories:
+
+- [d3heatmap](https://github.com/rstudio/d3heatmap)
 - [bwlewis/rthreejs](https://github.com/bwlewis/rthreejs)
 - [metricsgraphics](http://hrbrmstr.github.io/metricsgraphics/)
 - [Slidify](http://slidify.org/#)
 - [hadley/forcats: 🐈🐈🐈🐈: tools for working with categorical variables (factors)](https://github.com/hadley/forcats)
 - [hadley/modelr: Helper functions for modelling](https://github.com/hadley/modelr)
 - [hadley/multidplyr: Partitioned data frames for 'dplyr'](https://github.com/hadley/multidplyr)
-- [ggvis](http://ggvis.rstudio.com/)
-- [xts](https://cran.r-project.org/web/packages/xts/index.html)
 
-To use this image follow the same instructions [for using the RStudio rocker image, from rocker-org](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
+To use this image run:
+
+```
+docker run -d -p 8787:8787 -e USER=<username> -e PASSWORD=<password> nareal/r_docker_tidyverse_spiced
+```
+
+For more details refer to the instructions [for using the RStudio rocker image, from rocker-org](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
+
+The image is rebuild automatically on [docker hub](https://hub.docker.com/r/nareal/r_docker_tidyverse_spiced/) whenever this dockerfile changes or when [rocker/hadleyverse](https://hub.docker.com/r/rocker/hadleyverse/) image changes.
 
 # License
 
