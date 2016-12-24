@@ -21,8 +21,6 @@ RUN install2.r --error \
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify")' \
-  && r -e 'remotes::install_github("hadley/forcats")' \
-  && r -e 'remotes::install_github("hadley/modelr")' \
   && r -e 'remotes::install_github("hadley/multidplyr")' \
   && r -e 'remotes::install_github("rstudio/d3heatmap")' \
   && r -e 'remotes::install_github("bwlewis/rthreejs")' \
