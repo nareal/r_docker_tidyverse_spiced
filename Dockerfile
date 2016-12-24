@@ -17,7 +17,8 @@ RUN install2.r --error \
     networkD3 \
     DT \
     ggvis \ 
-    xts 
+    xts \
+    remotes
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify")' \
