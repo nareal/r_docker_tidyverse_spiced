@@ -1,4 +1,4 @@
-FROM rocker/hadleyverse
+FROM rocker/tidyverse:latest
 MAINTAINER "Nelson Areal" nareal@gmail.com
 
 ## Install additional packages. 
