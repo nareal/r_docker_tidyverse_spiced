@@ -6,9 +6,6 @@ This docker file extends the [rocker/tidyverse](https://hub.docker.com/r/rocker/
 
 The current image uses the stable R, and RStudio versions and adds the following packages from [CRAN](https://cran.r-project.org/):
 
-- [fBasics](https://cran.r-project.org/web/packages/fBasics/index.html)
-- [fArma](https://cran.r-project.org/web/packages/fArma/index.html)
-- [fGarch](https://cran.r-project.org/web/packages/fGarch/index.html)
 - [forecast](https://cran.r-project.org/web/packages/forecast/index.html)
 - [timeSeries](https://cran.r-project.org/web/packages/timeSeries/index.html)
 - [flexdashboard: Easy interactive dashboards for R](http://rmarkdown.rstudio.com/flexdashboard/)
