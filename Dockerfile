@@ -3,9 +3,9 @@ MAINTAINER "Nelson Areal" nareal@gmail.com
 
 ## Install additional packages. 
 RUN install2.r --error \
-    fBasics \
+    # fBasics \
     # fArma \
-    fGarch \
+    # fGarch \
     rugarch \
     forecast \
     timeSeries \
