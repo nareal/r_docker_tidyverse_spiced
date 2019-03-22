@@ -22,6 +22,7 @@ The current image uses the stable R, and RStudio versions and adds the following
 - [ggvis](http://ggvis.rstudio.com/)
 - [xts](https://cran.r-project.org/web/packages/xts/index.html)
 - [remotes](https://cran.r-project.org/web/packages/remotes/index.html)
+- [here](https://github.com/r-lib/here)
 
 and the following from github repositories:
 
@@ -30,6 +31,8 @@ and the following from github repositories:
 - [metricsgraphics](http://hrbrmstr.github.io/metricsgraphics/)
 - [Slidify](http://slidify.org/#)
 - [hadley/multidplyr: Partitioned data frames for 'dplyr'](https://github.com/hadley/multidplyr)
+
+Additionaly adds the `curl` linux package to the image.
 
 To use this image run:
 
