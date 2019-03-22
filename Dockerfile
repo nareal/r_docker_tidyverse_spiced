@@ -1,6 +1,9 @@
 FROM rocker/tidyverse:latest
 MAINTAINER "Nelson Areal" nareal@gmail.com
 
+RUN apt-get update -y \
+    && apt-get install -y curl 
+
 ## Install additional packages. 
 RUN install2.r --error \
     fBasics \
@@ -19,7 +22,8 @@ RUN install2.r --error \
     DT \
     ggvis \ 
     xts \
-    remotes
+    remotes \ 
+    here
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify")' \
