@@ -26,6 +26,7 @@ The current image uses the stable R, and RStudio versions and adds the following
 - [googledrive](https://cran.r-project.org/web/packages/googledrive/index.html)
 - [quanteda](https://cran.r-project.org/web/packages/quanteda/index.html)
 - [readtext](https://cran.r-project.org/web/packages/readtext/index.html)
+- [furrr](https://cran.r-project.org/web/packages/furrr/index.html)
 
 and the following from github repositories:
 
