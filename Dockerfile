@@ -2,7 +2,7 @@ FROM rocker/tidyverse:latest
 MAINTAINER "Nelson Areal" nareal@gmail.com
 
 RUN apt-get update -y \
-    && apt-get install -y curl 
+    && apt-get install -y curl libjpeg-dev
 
 ## Install additional packages. 
 RUN install2.r --error \
@@ -23,7 +23,10 @@ RUN install2.r --error \
     ggvis \ 
     xts \
     remotes \ 
-    here
+    here \
+    googledrive \
+    quanteda \
+    readtext
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify")' \

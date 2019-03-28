@@ -23,6 +23,9 @@ The current image uses the stable R, and RStudio versions and adds the following
 - [xts](https://cran.r-project.org/web/packages/xts/index.html)
 - [remotes](https://cran.r-project.org/web/packages/remotes/index.html)
 - [here](https://github.com/r-lib/here)
+- [googledrive](https://cran.r-project.org/web/packages/googledrive/index.html)
+- [quanteda](https://cran.r-project.org/web/packages/quanteda/index.html)
+- [readtext](https://cran.r-project.org/web/packages/readtext/index.html)
 
 and the following from github repositories:
 
