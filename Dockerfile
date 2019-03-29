@@ -27,12 +27,12 @@ RUN install2.r --error \
     googledrive \
     quanteda \
     readtext \ 
-    furrr > /dev/null
+    furrr &> /dev/null
 
 ## Install packages from github
-RUN r -e 'remotes::install_github("ramnathv/slidify")' \
-  && r -e 'remotes::install_github("hadley/multidplyr")' \
-  && r -e 'remotes::install_github("rstudio/d3heatmap")' \
-  && r -e 'remotes::install_github("bwlewis/rthreejs")' \
-  && r -e 'remotes::install_github("hrbrmstr/metricsgraphics")'
+RUN r -e 'remotes::install_github("ramnathv/slidify", quiet = TRUE)' \
+  && r -e 'remotes::install_github("hadley/multidplyr", quiet = TRUE)' \
+  && r -e 'remotes::install_github("rstudio/d3heatmap", quiet = TRUE)' \
+  && r -e 'remotes::install_github("bwlewis/rthreejs", quiet = TRUE)' \
+  && r -e 'remotes::install_github("hrbrmstr/metricsgraphics", quiet = TRUE)'
   
