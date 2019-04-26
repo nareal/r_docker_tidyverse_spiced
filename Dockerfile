@@ -2,7 +2,7 @@ FROM rocker/tidyverse:latest
 MAINTAINER "Nelson Areal" nareal@gmail.com
 
 RUN apt-get update -y \
-    && apt-get install -y curl libjpeg-dev libpoppler-cpp-dev
+    && apt-get install -y curl libjpeg-dev libpoppler-cpp-dev opensp
 
 ## Install additional packages. 
 RUN install2.r --error \
