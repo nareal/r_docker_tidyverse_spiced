@@ -31,8 +31,7 @@ RUN install2.r --error \
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify", quiet = TRUE)' \
-  && r -e 'remotes::install_github("hadley/multidplyr", quiet = TRUE)' \
+  && r -e 'remotes::install_github("tidyverse/multidplyr", quiet = TRUE)' \
   && r -e 'remotes::install_github("rstudio/d3heatmap", quiet = TRUE)' \
-  && r -e 'remotes::install_github("bwlewis/rthreejs", quiet = TRUE)' \
   && r -e 'remotes::install_github("hrbrmstr/metricsgraphics", quiet = TRUE)'
   
