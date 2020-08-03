@@ -31,7 +31,6 @@ The current image uses the stable R, and RStudio versions and adds the following
 and the following from github repositories:
 
 - [d3heatmap](https://github.com/rstudio/d3heatmap)
-- [bwlewis/rthreejs](https://github.com/bwlewis/rthreejs)
 - [metricsgraphics](http://hrbrmstr.github.io/metricsgraphics/)
 - [Slidify](http://slidify.org/#)
 - [hadley/multidplyr: Partitioned data frames for 'dplyr'](https://github.com/hadley/multidplyr)
