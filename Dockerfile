@@ -27,7 +27,8 @@ RUN install2.r --error \
     googledrive \
     quanteda \
     readtext \ 
-    furrr &> /dev/null
+    furrr \ 
+    frenchdata &> /dev/null
 
 ## Install packages from github
 RUN r -e 'remotes::install_github("ramnathv/slidify", quiet = TRUE)' \
