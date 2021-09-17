@@ -16,6 +16,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build the latest Docker image
-      run: docker build . --file Dockerfile --tag r_docker_tidyverse_spiced:latest
+      run: docker build . --file Dockerfile --tag nareal/r_docker_tidyverse_spiced:latest
     - name: Push the latest Docker image
       run: docker push nareal/r_docker_tidyverse_spiced:latest
