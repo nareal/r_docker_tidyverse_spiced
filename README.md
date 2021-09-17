@@ -1,6 +1,6 @@
 # r_docker_tidyverse_spiced
 
-[![Build Status](https://travis-ci.org/nareal/r_docker_tidyverse_spiced.svg?branch=master)](https://travis-ci.org/nareal/hr_docker_tidyverse_spiced) [![Size and layers](https://images.microbadger.com/badges/image/nareal/r_docker_tidyverse_spiced.svg)](https://registry.hub.docker.com/u/nareal/r_docker_tidyverse_spiced) [![Version](https://images.microbadger.com/badges/version/nareal/r_docker_tidyverse_spiced.svg)](https://registry.hub.docker.com/u/nareal/r_docker_tidyverse_spiced)
+[![Build Status](https://travis-ci.org/nareal/r_docker_tidyverse_spiced.svg?branch=master)](https://travis-ci.org/nareal/hr_docker_tidyverse_spiced) [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 This docker file extends the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) docker image, that includes RStudio + rmarkdown/pandoc/latex + R package ecosystem from Hadley Wickham, for more information check the [rocker-org/rocker-versioned repository](https://github.com/rocker-org/rocker-versioned).
 
