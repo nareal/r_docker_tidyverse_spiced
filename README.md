@@ -4,7 +4,7 @@
 
 This docker file extends the [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) docker image, that includes RStudio + rmarkdown/pandoc/latex + R package ecosystem from Hadley Wickham, for more information check the [rocker-org/rocker-versioned repository](https://github.com/rocker-org/rocker-versioned).
 
-The current image uses the stable R, and RStudio versions and adds the following packages from [CRAN](https://cran.r-project.org/):
+The current image uses the latest stable R, and RStudio versions and adds the following packages from [CRAN](https://cran.r-project.org/):
 
 - [fBasics](https://cran.r-project.org/web/packages/fBasics/index.html)
 - [fGarch](https://cran.r-project.org/web/packages/fGarch/index.html)
@@ -53,7 +53,7 @@ For more details refer to the instructions:
 - [for using the RStudio rocker image, from rocker-org](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)  
 - [Rocker Project - rstudio, tidyverse, verse, geospatial](https://rocker-project.org/images/versioned/rstudio.html)  
 
-The image is rebuild automatically on [docker hub](https://hub.docker.com/r/nareal/r_docker_tidyverse_spiced/) whenever this dockerfile changes or when [rocker/hadleyverse](https://hub.docker.com/r/rocker/hadleyverse/) image changes.
+The image is rebuild automatically on [docker hub](https://hub.docker.com/r/nareal/r_docker_tidyverse_spiced/) whenever this dockerfile changes or when [rocker/tidyverse](https://hub.docker.com/r/rocker/tidyverse/) image changes.
 
 # License
 
