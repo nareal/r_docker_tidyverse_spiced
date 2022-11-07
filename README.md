@@ -27,6 +27,7 @@ The current image uses the stable R, and RStudio versions and adds the following
 - [quanteda](https://cran.r-project.org/web/packages/quanteda/index.html)
 - [readtext](https://cran.r-project.org/web/packages/readtext/index.html)
 - [furrr](https://cran.r-project.org/web/packages/furrr/index.html)
+- [duckdb](https://cran.r-project.org/web/packages/duckdb/index.html)
 - [frenchdata](https://cran.r-project.org/web/packages/frenchdata/index.html)
 
 and the following from github repositories:
@@ -41,10 +42,16 @@ Additionaly adds the `curl` linux package to the image.
 To use this image run:
 
 ```
-docker run -d -p 8787:8787 -e USER=<username> -e PASSWORD=<password> nareal/r_docker_tidyverse_spiced
+docker run -d -p 8787:8787 -e PASSWORD=<password> nareal/r_docker_tidyverse_spiced
 ```
 
-For more details refer to the instructions [for using the RStudio rocker image, from rocker-org](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
+**NOTE:** As of November, 7 2022, the rstudio rocker image does not work for M1 Macs if you ran the image as a root user. More details in here: [Operation Not Permitted Error from Rocker RStudio Image on M1 MacBook · Issue #287 · rocker-org/rocker-versioned2](https://github.com/rocker-org/rocker-versioned2/issues/287)
+
+You can now visit: `http://localhost:8787`, the user is `rstudio`. 
+
+For more details refer to the instructions:  
+- [for using the RStudio rocker image, from rocker-org](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image)  
+- [Rocker Project - rstudio, tidyverse, verse, geospatial](https://rocker-project.org/images/versioned/rstudio.html)  
 
 The image is rebuild automatically on [docker hub](https://hub.docker.com/r/nareal/r_docker_tidyverse_spiced/) whenever this dockerfile changes or when [rocker/hadleyverse](https://hub.docker.com/r/rocker/hadleyverse/) image changes.
 
